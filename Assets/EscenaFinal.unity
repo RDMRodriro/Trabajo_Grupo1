@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 6de3b18bb00cc1b4a8edb47f4eb9f643, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: eac2ef371405749e0bd050b4c3272f16, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25048748, g: 0.19165033, b: 0.39453086, a: 1}
+  m_IndirectSpecularColor: {r: 0.04111985, g: 0.07249684, b: 0.12565836, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1258,7 +1258,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1316,13 +1316,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355543618}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15609734, y: -0.25541702, z: 0.041826148, w: 0.9532294}
-  m_LocalPosition: {x: 41.742714, y: 10.877542, z: -51.54898}
+  m_LocalRotation: {x: 0.9604746, y: -0.027458264, z: 0.25735837, w: 0.10247565}
+  m_LocalPosition: {x: -127.1, y: 121.8, z: 240.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 18.6, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 167.82, y: -30, z: 0}
 --- !u!1 &393477505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093377639}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13479689, y: 0.7543085, z: -0.16364253, w: -0.6213449}
+  m_LocalRotation: {x: -0.1347969, y: 0.7543085, z: -0.16364251, w: -0.6213449}
   m_LocalPosition: {x: 4.9074445, y: 2.5, z: 0.9576025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6243,7 +6243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963700718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.020396939, y: 0.9727339, z: -0.21102853, w: 0.094019495}
+  m_LocalRotation: {x: 0.020396935, y: 0.9727339, z: -0.21102853, w: 0.09401948}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
