@@ -40,9 +40,7 @@ namespace CartoonFX
             VisualElement root = rootVisualElement;
             root.style.height = new StyleLength(new Length(100, LengthUnit.Percent));
 
-            // UXML
-            var uxmlDocument = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(AssetDatabase.GUIDToAssetPath("bfd03f272fe010b4ba558a3bc456ffeb"));
-        
+            
             // USS
             var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>(AssetDatabase.GUIDToAssetPath("f8b971f10a610844f968f582415df874"));
             root.styleSheets.Add(styleSheet);

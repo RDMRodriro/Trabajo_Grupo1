@@ -6,7 +6,8 @@ public class animacion : MonoBehaviour
 {
     Animator animator;
     const float AnimationSmoothTime = 0.05f;
-    public GameObject ColliderAttack;
+   
+   
 
     void Start()
     {
@@ -29,18 +30,10 @@ public class animacion : MonoBehaviour
 
         animator.SetFloat("SpeedPercent", Magnitud, AnimationSmoothTime, Time.deltaTime);
 
-        if (Input.GetButton("Fire1"))
-        {
-            animator.SetBool("Attack", true);
-            ColliderAttack.SetActive(true);
-        }
-        else
-        {
-            animator.SetBool("Attack", false);
-            ColliderAttack.SetActive(false);
-        }
-
+        
 
 
     }
+
+
 }

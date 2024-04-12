@@ -5,7 +5,6 @@ using UnityEngine;
 public class StatsPlayer : MonoBehaviour
 {
     public int vida = 100;
-    public GameObject panel;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +25,9 @@ public class StatsPlayer : MonoBehaviour
             Destroy(collision.transform.gameObject);
             if (vida == 0)
             {
-                panel.SetActive(true);
                 Time.timeScale = 0;
             }
         }
+        
     }
 }

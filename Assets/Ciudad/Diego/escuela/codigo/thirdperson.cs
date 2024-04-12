@@ -26,11 +26,16 @@ public class thirdperson : MonoBehaviour
     bool isJump;
     bool isGround;
 
-    
+    public GameObject ColliderAttack;
+
+
+
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
     }
+
 
     
     void Update()
@@ -69,12 +74,12 @@ public class thirdperson : MonoBehaviour
             animator.SetBool("IsJumping", false);
             isJump = false;
         }
-        else 
+        else
         {
             animator.SetBool("IsGrounded", false);
             isGround = false;
 
-            if((isJump && velocity.y <0))
+            if ((isJump && velocity.y < 0))
             {
                 animator.SetBool("IsFalling", true);
             }
@@ -89,5 +94,24 @@ public class thirdperson : MonoBehaviour
 
         velocity.y += gravedad * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+        Attack();
     }
+
+    void Attack ()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            animator.SetBool("Attack", true);
+            ColliderAttack.SetActive(true);
+        }
+        else
+        {
+            animator.SetBool("Attack", false);
+            ColliderAttack.SetActive(false);
+        }
+
+    }
+
+
+
 }
