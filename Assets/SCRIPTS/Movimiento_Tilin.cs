@@ -15,7 +15,7 @@ public class Movimiento_Tilin : MonoBehaviour
     public float JumpHeigh = 3f;
     //camaras
     public GameObject cam1;
-    public GameObject cam2;
+   // public GameObject cam2;
     public Animator animator;
     public GameObject BalaPlayer;
     public Transform PointerBala;
@@ -30,10 +30,10 @@ public class Movimiento_Tilin : MonoBehaviour
     
     void Update()
     {
-        CambioCamaras();
+       // CambioCamaras();
     }
 
-    void CambioCamaras()
+   /* void CambioCamaras()
     {
         if(Input.GetButton("Fire2"))
         {
@@ -49,7 +49,7 @@ public class Movimiento_Tilin : MonoBehaviour
             GetComponent<TP_Script>().enabled = true;
 
         }
-    }
+    }*/
     void Movimiento ()
     {
         if(Input.GetButton("Fire1"))
