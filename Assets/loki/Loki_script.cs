@@ -97,4 +97,17 @@ public class Loki_script : MonoBehaviour
         tiempoRestante = tiempo;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            vida = vida - 20;
+
+            if (vida == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
 }
