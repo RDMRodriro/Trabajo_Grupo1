@@ -9,8 +9,8 @@ public class Flecha : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 2f);
-        transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+        Destroy(gameObject, 10f);
+       // transform.rotation = Quaternion.Euler(0f, 0f, 90f);
     }
 
     void Update()
