@@ -25,11 +25,14 @@ public Transform bugacam;
     bool isJump;
     bool isGround;
    // public GameObject ColliderAttack;
+//comida
+public int comida;
+//variables comdias 
     
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     
@@ -106,5 +109,12 @@ public Transform bugacam;
         }
     }
 
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "FOOD") {
+            comida = comida + 1;
+            Destroy(collision.transform.gameObject);
+        
+        }
+    }
 }
