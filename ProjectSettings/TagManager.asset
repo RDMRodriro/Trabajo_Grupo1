@@ -8,6 +8,7 @@ TagManager:
   - BalaEnemigo
   - BalaPlayer
   - VaritaEnemigo
+  - FOOD
   layers:
   - Default
   - TransparentFX
