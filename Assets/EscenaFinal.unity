@@ -1690,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5993698490085036715, guid: fd4bab3d70f15d34fa63054d58e58b68, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3235,7 +3235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2170738913442926786, guid: 5141440ace5bf774bbc228e27d2f3672, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2170738913442926797, guid: 5141440ace5bf774bbc228e27d2f3672, type: 3}
@@ -5405,11 +5405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019047443
+      value: 0.000000019047443
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000026961708
+      value: -0.0000000026961708
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402524870980, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -8075,8 +8075,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   Flecha: {fileID: 7067797055108995874, guid: f10a372fc23003147b29c9becb21c45d, type: 3}
   PointerFlecha: {fileID: 2001221296}
-  tiempo: 0
-  tiempoRestante: 0
+  tiempo: 2
+  tiempoRestante: 2
   vida: 50
 --- !u!1001 &1922810238
 PrefabInstance:
