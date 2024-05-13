@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class TP_Script : MonoBehaviour
 {
 public CharacterController controller;
@@ -26,12 +26,15 @@ public Transform bugacam;
     bool isGround;
    // public GameObject ColliderAttack;
 //comida
-public int comida;
+public GameObject panelComida;
+private int comida;
+public Text puntuacionText;
 //variables comdias 
     
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        comida = 0;
         //Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -109,12 +112,10 @@ public int comida;
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "FOOD") {
-            comida = comida + 1;
-            Destroy(collision.transform.gameObject);
+        comida++;
+        puntuacionText.text = comida.ToString();
         
-        }
     }
 }
