@@ -19,6 +19,7 @@ public class Loki_script : MonoBehaviour
     public float tiempoRestante;
 
     public int vida;
+    public GameObject comida;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,6 +107,8 @@ public class Loki_script : MonoBehaviour
             if (vida == 0)
             {
                 Destroy(gameObject);
+                comida.SetActive(true);
+
             }
         }
     }
