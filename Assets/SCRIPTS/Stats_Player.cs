@@ -32,7 +32,15 @@ public class Stats_Player : MonoBehaviour
             }
         }
     }
-    
+    public void ComidaDaño (float Daño)
+    {
+        vidaActual -= Daño;
+        if (vidaActual == 0)
+        {
+            panel.SetActive(true);
+                Time.timeScale = 0;
+        }
+    }
     public void ComidaCura (float cura)
     {
         vidaActual += cura;
@@ -41,4 +49,5 @@ public class Stats_Player : MonoBehaviour
             vidaActual = vidaMaxima;
         }
     }
+
 }
