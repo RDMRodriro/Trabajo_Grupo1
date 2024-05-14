@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Stats_Player : MonoBehaviour
 {
-    public int vida = 100;
+    public Image barradevida;
+    public float vidaActual = 100;
+    public float vidaMaxima = 100;
     public GameObject panel;
     void Start()
     {
@@ -14,20 +16,29 @@ public class Stats_Player : MonoBehaviour
     
     void Update()
     {
-        
+        barradevida.fillAmount = vidaActual / vidaMaxima;
     }
 
     private void OnCollisionEnter (Collision collision)
     {
         if(collision.transform.tag == "BalaEnemigo")
         {
-            vida = vida - 10;
+            vidaActual = vidaActual - 10;
             Destroy(collision.transform.gameObject);
-            if (vida == 0)
+            if (vidaActual == 0)
             {
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+        }
+    }
+    
+    public void ComidaCura (float cura)
+    {
+        vidaActual += cura;
+        if (vidaActual > vidaMaxima)
+        {
+            vidaActual = vidaMaxima;
         }
     }
 }
