@@ -8,23 +8,18 @@ public class AlmohadaLauncher : MonoBehaviour
     public GameObject Almohada;
     public Transform PointAlmohada;
     public float rango = 20f;
-    //public Vector3 ejes;
-    //public Vector3 Direccion;
     public float speed;
-   
-   
+    public float tiempoEntreLanzamientos = 2f;
+    private float tiempoRestante;
 
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.G))
-        {
-            InstanciarAlmohada();
-        }*/
+        
     }
 
     void InstanciarAlmohada()
@@ -39,13 +34,20 @@ public class AlmohadaLauncher : MonoBehaviour
     {
         if (other.transform.tag == "Almohada")
         {
-            InstanciarAlmohada();
+            tiempoRestante -= Time.deltaTime;
+
+            if (tiempoRestante <= 0f)
+            {
+                InstanciarAlmohada();
+                ResetearTiempo();
+            }
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    void ResetearTiempo()
     {
-        
+        tiempoRestante = tiempoEntreLanzamientos;
     }
+
 }
 
