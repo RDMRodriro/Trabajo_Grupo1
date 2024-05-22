@@ -32,7 +32,7 @@ public class AlmohadaLauncher : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.transform.tag == "Almohada")
+        if (other.transform.tag == "Enemigo")
         {
             tiempoRestante -= Time.deltaTime;
 

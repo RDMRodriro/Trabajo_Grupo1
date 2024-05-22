@@ -18,4 +18,5 @@ public class Almohada : MonoBehaviour
         transform.Translate(Direccion * speed * Time.deltaTime);
     }
 
+    
 }
