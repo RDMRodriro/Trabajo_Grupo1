@@ -11,12 +11,12 @@ public class Eventos_Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == "Player")
+        if (other.transform.tag == "Player")
         {
             EntrarTrigger.Invoke();
         }
 
-        
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -27,15 +27,5 @@ public class Eventos_Player : MonoBehaviour
         }
 
 
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
