@@ -17,4 +17,9 @@ public class DialogueTrigger : MonoBehaviour
     {
         ImagenDialogos.SetActive(false);
     }
+
+    public void DestroyTrigger()
+    {
+        Destroy(gameObject);
+    }
 }
