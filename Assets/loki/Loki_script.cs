@@ -111,6 +111,18 @@ public class Loki_script : MonoBehaviour
 
             }
         }
+
+        if (collision.transform.tag == "Almohada")
+        {
+            vida = vida - 10;
+
+            if (vida == 0)
+            {
+                Destroy(gameObject);
+                comida.SetActive(true);
+
+            }
+        }
     }
 
 }

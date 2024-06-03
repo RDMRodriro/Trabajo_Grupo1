@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 84c3ec3f9319da14994054cd9eb02837, type: 2}
 --- !u!1 &2784354
 GameObject:
   m_ObjectHideFlags: 0
@@ -11254,11 +11254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019047443
+      value: -0.000000019047441
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000026961708
+      value: 0.0000000026961706
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402524870980, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -11350,11 +11350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402939965118, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017077603
+      value: 0.000000017077593
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402939965118, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000021012445
+      value: -0.0000000021012432
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402948932701, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -18084,11 +18084,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8560965121153425959, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: distanciaAtaque
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8560965121153425959, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: distanciaSeguir
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8560965121153425959, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: distanciaDetenerse
@@ -18096,7 +18096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8560965121153425959, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: enemigoLayer.m_Bits
-      value: 32
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 8881222407639651359, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18104,7 +18104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8881222407639651359, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000023841858
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 8881222407639651359, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18144,7 +18144,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8881222407639651359, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443009993}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4635945978717876816, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2059852849}
+    - targetCorrespondingSourceObject: {fileID: 4635945978717876816, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2059852848}
   m_SourcePrefab: {fileID: 100100000, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
 --- !u!4 &1922810239 stripped
 Transform:
@@ -19867,6 +19873,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047312624}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2059852842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4635945978717876816, guid: fdcef9b3df6deac48a4c214ab3c04988, type: 3}
+  m_PrefabInstance: {fileID: 1922810238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2059852848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059852842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17faa0b8c8903dd4cb5d988566bd47ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Almohada: {fileID: 7131021325359696746, guid: 7df8abe16e28cbf45bc6d249edc68d22, type: 3}
+  PointAlmohada: {fileID: 0}
+  rango: 20
+  speed: 0
+  tiempoEntreLanzamientos: 2
+--- !u!114 &2059852849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059852842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec83a020265506498e3dc427aa76273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigoLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  radioDeteccion: 11
 --- !u!1 &2063227323
 GameObject:
   m_ObjectHideFlags: 0
