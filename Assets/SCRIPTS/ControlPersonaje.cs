@@ -14,6 +14,9 @@ public class ControlPersonaje : MonoBehaviour
     public float distanciaAtaque = 2f;
     public LayerMask enemigoLayer;
 
+    public int vida = 100;
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -58,6 +61,20 @@ public class ControlPersonaje : MonoBehaviour
             animator.SetTrigger("Attack");
         }
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            vida = vida - 20;
+
+            if (vida == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
 
     void OnDrawGizmosSelected()
     {
