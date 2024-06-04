@@ -10,6 +10,8 @@ TagManager:
   - VaritaEnemigo
   - FOOD
   - Enemigo
+  - Fire
+  - Almohada
   layers:
   - Default
   - TransparentFX
