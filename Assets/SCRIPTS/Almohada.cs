@@ -15,7 +15,7 @@ public class Almohada : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Direccion * speed * Time.deltaTime);
+        //transform.Translate(Direccion * speed * Time.deltaTime);
     }
 
     

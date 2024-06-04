@@ -97,5 +97,15 @@ public class Skadi_Enemigo : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (collision.transform.tag == "Almohada")
+        {
+            vida = vida - 10;
+
+            if (vida == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
