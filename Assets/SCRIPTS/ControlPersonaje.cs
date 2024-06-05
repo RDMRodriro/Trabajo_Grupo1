@@ -62,18 +62,6 @@ public class ControlPersonaje : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.tag == "Player")
-        {
-            vida = vida - 20;
-
-            if (vida == 0)
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
 
 
     void OnDrawGizmosSelected()
