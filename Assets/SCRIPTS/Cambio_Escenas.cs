@@ -42,7 +42,14 @@ public class Cambio_Escenas : MonoBehaviour
 
     public void CargarEscena1()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Player")
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }
