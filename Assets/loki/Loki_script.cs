@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Loki_script : MonoBehaviour
 {
-    private NavMeshAgent Agent;
+    public NavMeshAgent Agent;
     public Transform pointer;
     public float LookRadius = 20f;
     public float DistanciaMagia = 10f;
@@ -29,6 +29,11 @@ public class Loki_script : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        MovimientoNaveMesh();
+        
+    }
+    public void  MovimientoNaveMesh()
     {
         float distancia = Vector3.Distance(pointer.position, transform.position);
 
@@ -59,7 +64,6 @@ public class Loki_script : MonoBehaviour
             Agent.speed = 0f;
         }
 
-        
     }
     private void OnDrawGizmosSelected()
     {
