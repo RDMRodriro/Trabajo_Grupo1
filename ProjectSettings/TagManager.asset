@@ -12,6 +12,7 @@ TagManager:
   - Enemigo
   - Fire
   - Almohada
+  - EspadaSkeleton
   layers:
   - Default
   - TransparentFX
