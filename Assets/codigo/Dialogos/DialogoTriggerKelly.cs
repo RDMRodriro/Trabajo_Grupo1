@@ -15,11 +15,11 @@ public class DialogoTriggerKelly : MonoBehaviour
     public void TriggerSalir()
     {
         ImagenDialogos.SetActive(false);
-        //DestroyTrigger();
+        DestroyTrigger();
     }
 
-    /*public void DestroyTrigger()
+    public void DestroyTrigger()
     {
         Destroy(gameObject);
-    }*/
+    }
 }

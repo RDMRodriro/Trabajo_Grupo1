@@ -30,7 +30,7 @@ public class DialogoManagerKelly : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            Destroy(gameObject);
+            return;
         }
         string sentence = sentences.Dequeue();
         DialogueText.text = sentence;

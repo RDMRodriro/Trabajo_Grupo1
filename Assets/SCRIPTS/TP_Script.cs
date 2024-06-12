@@ -25,9 +25,10 @@ public Transform bugacam;
     Animator animator;
     bool isJump;
     bool isGround;
-   // public GameObject ColliderAttack;
-//comida
-public GameObject panelComida;
+    public GameObject ColliderAttack1;
+    public GameObject ColliderAttack2;
+    //comida
+    public GameObject panelComida;
 private int comida;
 public Text puntuacionText;
 //variables comdias 
@@ -105,12 +106,14 @@ public Text puntuacionText;
         {
             animator.SetBool("Attack", true);
         
-            //ColliderAttack.SetActive(true);
+            ColliderAttack1.SetActive(true);
+            ColliderAttack2.SetActive(true);
         }
         else
         {
             animator.SetBool("Attack", false);
-           // ColliderAttack.SetActive(false);
+           ColliderAttack1.SetActive(false);
+            ColliderAttack2.SetActive(false);
         }
     }
 

@@ -20,6 +20,9 @@ public class Loki_script : MonoBehaviour
 
     public int vida;
     public GameObject comida;
+    public GameObject OdinDialogo;
+    public GameObject Escuela;
+    public GameObject EscuelaEnemigos;
     // Start is called before the first frame update
     void Start()
     {
@@ -112,7 +115,9 @@ public class Loki_script : MonoBehaviour
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
-
+                OdinDialogo.SetActive(true);
+                EscuelaEnemigos.SetActive(true);
+                Escuela.SetActive(false);
             }
         }
 
@@ -124,7 +129,9 @@ public class Loki_script : MonoBehaviour
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
-
+                OdinDialogo.SetActive(true);
+                EscuelaEnemigos.SetActive(true);
+                Escuela.SetActive(false);
             }
         }
     }
