@@ -14,6 +14,7 @@ TagManager:
   - Almohada
   - EspadaSkeleton
   - "Pu\xF1oPlayer"
+  - AttackPlayer
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,6 @@ public class Stats_Player : MonoBehaviour
         if(collision.transform.tag == "BalaEnemigo")
         {
             vidaActual = vidaActual - 10;
-            Destroy(collision.transform.gameObject);
             if (vidaActual == 0)
             {
                 panel.SetActive(true);

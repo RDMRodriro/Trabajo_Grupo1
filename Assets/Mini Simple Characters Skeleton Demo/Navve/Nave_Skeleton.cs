@@ -79,9 +79,9 @@ public class Nave_Skeleton : MonoBehaviour
 
     private void OnCollisionEnter (Collision collision)
     {
-        if(collision.transform.tag == "PuñoPlayer")
+        if(collision.transform.tag == "AttackPlayer")
         {
-            vida = vida - 20;
+            vida = vida - 10;
             if (vida == 0)
             {
                 Destroy(gameObject);
