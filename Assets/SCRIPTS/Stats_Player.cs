@@ -30,6 +30,15 @@ public class Stats_Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+        if(collision.transform.tag == "EspadaSkeleton")
+        {
+            vidaActual = vidaActual - 5;
+            if (vidaActual == 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
     }
     public void ComidaDaño (float Daño)
     {

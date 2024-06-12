@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 661353830953470973}
   - component: {fileID: 661353830953470974}
   - component: {fileID: 661353830953470975}
+  - component: {fileID: 3351735362309114543}
   m_Layer: 7
   m_Name: Sphere
   m_TagString: AttackPlayer
@@ -315,6 +316,33 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3351735362309114543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661353830953470961}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &661353831216077882
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +355,7 @@ GameObject:
   - component: {fileID: 661353831216077894}
   - component: {fileID: 661353831216077895}
   - component: {fileID: 661353831216077880}
+  - component: {fileID: 804020161739436713}
   m_Layer: 7
   m_Name: Sphere
   m_TagString: AttackPlayer
@@ -420,6 +449,33 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &804020161739436713
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661353831216077882}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &661353831858208302
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,8 +1004,6 @@ MonoBehaviour:
   turnSmoothTime: 0.1
   turnSmoothVelocity: 0
   bugacam: {fileID: 0}
-  "Pu\xF1oIzquierdo": {fileID: 0}
-  "Pu\xF1oDerecho": {fileID: 0}
   gravedad: -9.8
   groundCheck: {fileID: 2976981149871287155}
   groundDistance: 0.45

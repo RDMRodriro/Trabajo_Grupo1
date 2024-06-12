@@ -81,7 +81,7 @@ public class Nave_Skeleton : MonoBehaviour
     {
         if(collision.transform.tag == "AttackPlayer")
         {
-            vida = vida - 10;
+            vida = vida - 8;
             if (vida == 0)
             {
                 Destroy(gameObject);
