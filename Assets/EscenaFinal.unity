@@ -2837,8 +2837,10 @@ GameObject:
   - component: {fileID: 210289707}
   - component: {fileID: 210289706}
   - component: {fileID: 210289705}
+  - component: {fileID: 210289709}
+  - component: {fileID: 210289708}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: DialogoBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2874,7 +2876,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2930,6 +2932,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210289703}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &210289708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210289703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c3ced4f0dc54e9b555bc2774736b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntrarTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210289709}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: DialogoTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ExitTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210289709}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerSalir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &210289709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210289703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa80ec27d06b7db468e295f39bd3496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    name: Odin
+    sentences:
+    - Hijo tienes que salvar el pueblo
+  ImagenDialogos: {fileID: 34860779}
 --- !u!1 &213223254 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1950904649658886905, guid: da004beb519cdc046b4a8bb7f8e3abaf, type: 3}
@@ -5868,7 +5929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1079446996172371488, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.1
+      value: -66
       objectReference: {fileID: 0}
     - target: {fileID: 1079446996172371488, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5876,7 +5937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1079446996172371488, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.9
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1079446996172371488, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8529,7 +8590,7 @@ GameObject:
   - component: {fileID: 608094127}
   - component: {fileID: 608094126}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: BarreraBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8616,7 +8677,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.38268274, z: -0, w: 0.9238798}
   m_LocalPosition: {x: 264, y: 1.2, z: -12}
-  m_LocalScale: {x: 46.069073, y: 5.4194, z: 237.23297}
+  m_LocalScale: {x: 46.069073, y: 84.43317, z: 237.23297}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1464797414}
@@ -13180,7 +13241,7 @@ GameObject:
   - component: {fileID: 1059414453}
   - component: {fileID: 1059414452}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: BarreraBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13266,8 +13327,8 @@ Transform:
   m_GameObject: {fileID: 1059414451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -121, y: 1.2, z: 169}
-  m_LocalScale: {x: 46.069073, y: 5.4194, z: 612.5854}
+  m_LocalPosition: {x: -140.4, y: 9.7, z: 169}
+  m_LocalScale: {x: 46.069073, y: 94.013565, z: 612.5854}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1914402409}
@@ -13692,7 +13753,7 @@ GameObject:
   - component: {fileID: 1087177286}
   - component: {fileID: 1087177285}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: BarreraBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13778,8 +13839,8 @@ Transform:
   m_GameObject: {fileID: 1087177284}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 147.3, y: 1.2, z: -105.2}
-  m_LocalScale: {x: 46.069073, y: 5.4194, z: 612.5854}
+  m_LocalPosition: {x: 147.3, y: 6.9, z: -105.2}
+  m_LocalScale: {x: 46.069073, y: 72.72835, z: 612.5854}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1380054906}
@@ -17399,11 +17460,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017036555
+      value: -0.00000001703655
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000024115294
+      value: 0.0000000024115285
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402524870980, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -17443,7 +17504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402923248053, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.1
+      value: -66
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402923248053, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17451,7 +17512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402923248053, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.6
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402923248053, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17499,11 +17560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402939965118, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017077593
+      value: -0.000000017077593
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402939965118, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000021012436
+      value: 0.0000000021012436
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402948932701, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -17539,7 +17600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564403214639438, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 1037564403214639438, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -17789,7 +17850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1420943568377158471, guid: 2557362e4e8bcfe4486030fd8a78182a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119.5001
+      value: 115.4
       objectReference: {fileID: 0}
     - target: {fileID: 1420943568377158471, guid: 2557362e4e8bcfe4486030fd8a78182a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17797,7 +17858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1420943568377158471, guid: 2557362e4e8bcfe4486030fd8a78182a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.6998386
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 1420943568377158471, guid: 2557362e4e8bcfe4486030fd8a78182a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18277,8 +18338,10 @@ GameObject:
   - component: {fileID: 1380054909}
   - component: {fileID: 1380054908}
   - component: {fileID: 1380054907}
+  - component: {fileID: 1380054911}
+  - component: {fileID: 1380054910}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: DialogoBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18314,7 +18377,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18370,6 +18433,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380054905}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1380054910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380054905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c3ced4f0dc54e9b555bc2774736b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntrarTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1380054911}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: DialogoTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ExitTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1380054911}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerSalir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1380054911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380054905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa80ec27d06b7db468e295f39bd3496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    name: Odin
+    sentences:
+    - Hijo tienes que salvar el pueblo
+  ImagenDialogos: {fileID: 34860779}
 --- !u!1 &1388252009
 GameObject:
   m_ObjectHideFlags: 0
@@ -19322,8 +19444,10 @@ GameObject:
   - component: {fileID: 1464797417}
   - component: {fileID: 1464797416}
   - component: {fileID: 1464797415}
+  - component: {fileID: 1464797419}
+  - component: {fileID: 1464797418}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: DialogoBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19338,8 +19462,8 @@ Transform:
   m_GameObject: {fileID: 1464797413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.42209342, y: 0, z: -0.037854057}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.42, y: 0.172, z: -0.036}
+  m_LocalScale: {x: 1, y: 0.37123758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 608094129}
@@ -19359,7 +19483,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19415,6 +19539,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464797413}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1464797418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464797413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c3ced4f0dc54e9b555bc2774736b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntrarTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1464797419}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: DialogoTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ExitTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1464797419}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerSalir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1464797419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464797413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa80ec27d06b7db468e295f39bd3496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    name: Odin
+    sentences:
+    - Hijo tienes que salvar el pueblo
+  ImagenDialogos: {fileID: 34860779}
 --- !u!1001 &1467801292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19651,7 +19834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.1
+      value: -66
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19659,7 +19842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.6
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19671,11 +19854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000341552
+      value: -0.0000000341552
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000004202488
+      value: 0.000000004202488
       objectReference: {fileID: 0}
     - target: {fileID: 5191051180596204830, guid: c3b6a070f1fa2534982c338fd5f1377d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19910,7 +20093,7 @@ GameObject:
   - component: {fileID: 1510009700}
   - component: {fileID: 1510009699}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: BarreraBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19997,7 +20180,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
   m_LocalPosition: {x: 147.3, y: 1.2, z: 268}
-  m_LocalScale: {x: 46.069073, y: 5.4194, z: 612.5854}
+  m_LocalScale: {x: 46.069073, y: 42.987225, z: 612.5854}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 210289704}
@@ -20698,8 +20881,10 @@ GameObject:
   - component: {fileID: 1572619550}
   - component: {fileID: 1572619549}
   - component: {fileID: 1572619548}
+  - component: {fileID: 1572619552}
+  - component: {fileID: 1572619551}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: DialogoBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20735,7 +20920,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -20791,6 +20976,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572619546}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1572619551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572619546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c3ced4f0dc54e9b555bc2774736b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntrarTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1572619552}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: DialogoTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ExitTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1572619552}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerSalir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1572619552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572619546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa80ec27d06b7db468e295f39bd3496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    name: Odin
+    sentences:
+    - Hijo tienes que salvar el pueblo
+  ImagenDialogos: {fileID: 34860779}
 --- !u!1 &1573745578
 GameObject:
   m_ObjectHideFlags: 0
@@ -25598,7 +25842,7 @@ GameObject:
   - component: {fileID: 1844760593}
   - component: {fileID: 1844760592}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: BarreraBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25684,8 +25928,8 @@ Transform:
   m_GameObject: {fileID: 1844760591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 321.9, y: 1.2, z: 271}
-  m_LocalScale: {x: 46.069073, y: 5.4194, z: 405.8317}
+  m_LocalPosition: {x: 358.8, y: 17.3, z: 271}
+  m_LocalScale: {x: 46.069073, y: 32.73446, z: 405.8317}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1572619547}
@@ -26824,8 +27068,10 @@ GameObject:
   - component: {fileID: 1914402412}
   - component: {fileID: 1914402411}
   - component: {fileID: 1914402410}
+  - component: {fileID: 1914402414}
+  - component: {fileID: 1914402413}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: DialogoBorde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26861,7 +27107,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -26917,6 +27163,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914402408}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1914402413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914402408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c3ced4f0dc54e9b555bc2774736b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntrarTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1914402414}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: DialogoTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ExitTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1914402414}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerSalir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1914402414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914402408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa80ec27d06b7db468e295f39bd3496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    name: Odin
+    sentences:
+    - Hijo tienes que salvar el pueblo
+  ImagenDialogos: {fileID: 34860779}
 --- !u!1001 &1922810238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28305,7 +28610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7386555354185029156, guid: ee11a8ea0e686af4a93e08d8ede2bc3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.8
+      value: -18.9
       objectReference: {fileID: 0}
     - target: {fileID: 7386555354185029156, guid: ee11a8ea0e686af4a93e08d8ede2bc3b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29358,7 +29663,7 @@ Transform:
   m_GameObject: {fileID: 2095336849}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -258.59, y: -17.948229, z: -86.78}
+  m_LocalPosition: {x: -256.69, y: -17.948229, z: -87.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
