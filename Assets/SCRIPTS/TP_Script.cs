@@ -105,8 +105,7 @@ public Text puntuacionText;
         if (Input.GetButton("Fire1"))
         {
             animator.SetBool("Attack", true);
-            PuñoDerecho.SetActive(true);
-            PuñoIzquierdo.SetActive(true);
+           
             //ColliderAttack.SetActive(true);
         }
         else
