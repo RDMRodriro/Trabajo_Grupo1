@@ -44,6 +44,7 @@ public class Nave_Skeleton : MonoBehaviour
                 {
                     animator.SetBool("Ataque", true);
                     Agent.speed = 0;
+                    
                 }
                 else
                 {
@@ -78,7 +79,7 @@ public class Nave_Skeleton : MonoBehaviour
 
     private void OnCollisionEnter (Collision collision)
     {
-        if(collision.transform.tag == "Player")
+        if(collision.transform.tag == "PuñoPlayer")
         {
             vida = vida - 20;
             if (vida == 0)

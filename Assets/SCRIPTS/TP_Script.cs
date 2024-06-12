@@ -12,6 +12,8 @@ public float velocidad = 10f;
 public float turnSmoothTime = 0.1f;
 public float turnSmoothVelocity;
 public Transform bugacam;
+public GameObject PuñoIzquierdo;
+public GameObject PuñoDerecho;
     //gravedad
     Vector3 velocity;
     public float gravedad = -9.8f;
@@ -103,6 +105,8 @@ public Text puntuacionText;
         if (Input.GetButton("Fire1"))
         {
             animator.SetBool("Attack", true);
+            PuñoDerecho.SetActive(true);
+            PuñoIzquierdo.SetActive(true);
             //ColliderAttack.SetActive(true);
         }
         else
