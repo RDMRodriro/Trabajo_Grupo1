@@ -87,5 +87,13 @@ public class Nave_Skeleton : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        if(collision.transform.tag == "Almohada")
+        {
+            vida = vida - 2;
+            if (vida == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
