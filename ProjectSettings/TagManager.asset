@@ -15,6 +15,7 @@ TagManager:
   - EspadaSkeleton
   - "Pu\xF1oPlayer"
   - AttackPlayer
+  - Arena
   layers:
   - Default
   - TransparentFX
