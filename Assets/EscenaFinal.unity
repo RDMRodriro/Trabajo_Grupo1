@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 3656022}
   - component: {fileID: 3656021}
   - component: {fileID: 3656020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (40)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 25903984}
   - component: {fileID: 25903983}
   - component: {fileID: 25903982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 54316491}
   - component: {fileID: 54316490}
   - component: {fileID: 54316489}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (55)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 62623360}
   - component: {fileID: 62623359}
   - component: {fileID: 62623358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (31)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -2120,7 +2120,7 @@ GameObject:
   - component: {fileID: 109913477}
   - component: {fileID: 109913476}
   - component: {fileID: 109913475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (20)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -3704,7 +3704,7 @@ GameObject:
   - component: {fileID: 206044802}
   - component: {fileID: 206044801}
   - component: {fileID: 206044800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (13)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -4240,7 +4240,7 @@ GameObject:
   - component: {fileID: 237281292}
   - component: {fileID: 237281291}
   - component: {fileID: 237281290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (63)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -4608,7 +4608,7 @@ GameObject:
   - component: {fileID: 245365391}
   - component: {fileID: 245365390}
   - component: {fileID: 245365389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (53)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -5198,7 +5198,7 @@ GameObject:
   - component: {fileID: 289805240}
   - component: {fileID: 289805239}
   - component: {fileID: 289805238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -5334,7 +5334,7 @@ GameObject:
   - component: {fileID: 303460687}
   - component: {fileID: 303460686}
   - component: {fileID: 303460685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (45)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -6256,7 +6256,7 @@ GameObject:
   - component: {fileID: 367200694}
   - component: {fileID: 367200693}
   - component: {fileID: 367200692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (57)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -6549,7 +6549,7 @@ GameObject:
   - component: {fileID: 385688638}
   - component: {fileID: 385688637}
   - component: {fileID: 385688636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (38)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -7268,7 +7268,7 @@ GameObject:
   - component: {fileID: 409205102}
   - component: {fileID: 409205101}
   - component: {fileID: 409205100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (14)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -7563,7 +7563,7 @@ GameObject:
   - component: {fileID: 433857130}
   - component: {fileID: 433857129}
   - component: {fileID: 433857128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (62)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -7668,7 +7668,7 @@ GameObject:
   - component: {fileID: 435220139}
   - component: {fileID: 435220138}
   - component: {fileID: 435220137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (32)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -9049,6 +9049,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 426980083049319434, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1712088385}
+    - targetCorrespondingSourceObject: {fileID: 426980083049319434, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712088388}
   m_SourcePrefab: {fileID: 100100000, guid: c04cb8c4f2f5faa4591109b17479f283, type: 3}
 --- !u!1 &458842624
 GameObject:
@@ -9262,7 +9265,7 @@ GameObject:
   - component: {fileID: 464716349}
   - component: {fileID: 464716348}
   - component: {fileID: 464716347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -9364,9 +9367,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468471247}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: TriggerArena
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9852,7 +9855,7 @@ GameObject:
   - component: {fileID: 484418144}
   - component: {fileID: 484418143}
   - component: {fileID: 484418142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (10)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -10578,7 +10581,7 @@ GameObject:
   - component: {fileID: 524567846}
   - component: {fileID: 524567845}
   - component: {fileID: 524567844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (36)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -10995,7 +10998,7 @@ GameObject:
   - component: {fileID: 554134220}
   - component: {fileID: 554134219}
   - component: {fileID: 554134218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (35)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -11349,7 +11352,7 @@ GameObject:
   - component: {fileID: 574934641}
   - component: {fileID: 574934640}
   - component: {fileID: 574934639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (47)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -11675,7 +11678,7 @@ GameObject:
   - component: {fileID: 587302293}
   - component: {fileID: 587302292}
   - component: {fileID: 587302291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (12)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -11874,7 +11877,7 @@ GameObject:
   - component: {fileID: 594645964}
   - component: {fileID: 594645963}
   - component: {fileID: 594645962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (64)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -12175,7 +12178,7 @@ GameObject:
   - component: {fileID: 614517317}
   - component: {fileID: 614517316}
   - component: {fileID: 614517315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (33)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -13427,7 +13430,7 @@ GameObject:
   - component: {fileID: 654958634}
   - component: {fileID: 654958633}
   - component: {fileID: 654958632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (51)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -14904,7 +14907,7 @@ GameObject:
   - component: {fileID: 795176500}
   - component: {fileID: 795176499}
   - component: {fileID: 795176498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -15468,7 +15471,7 @@ GameObject:
   - component: {fileID: 842113294}
   - component: {fileID: 842113293}
   - component: {fileID: 842113292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (58)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -16771,7 +16774,7 @@ GameObject:
   - component: {fileID: 969400553}
   - component: {fileID: 969400552}
   - component: {fileID: 969400551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (16)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -17442,7 +17445,7 @@ GameObject:
   - component: {fileID: 1018827439}
   - component: {fileID: 1018827438}
   - component: {fileID: 1018827437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (54)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -17623,7 +17626,7 @@ GameObject:
   - component: {fileID: 1023399014}
   - component: {fileID: 1023399013}
   - component: {fileID: 1023399012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (49)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -18084,7 +18087,7 @@ GameObject:
   - component: {fileID: 1045818537}
   - component: {fileID: 1045818536}
   - component: {fileID: 1045818535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (25)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -18701,7 +18704,7 @@ GameObject:
   - component: {fileID: 1079053723}
   - component: {fileID: 1079053722}
   - component: {fileID: 1079053721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (65)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -19900,7 +19903,7 @@ GameObject:
   - component: {fileID: 1151118797}
   - component: {fileID: 1151118796}
   - component: {fileID: 1151118795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (24)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -20697,7 +20700,7 @@ GameObject:
   - component: {fileID: 1192683597}
   - component: {fileID: 1192683596}
   - component: {fileID: 1192683595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -20909,7 +20912,7 @@ GameObject:
   - component: {fileID: 1198742457}
   - component: {fileID: 1198742456}
   - component: {fileID: 1198742455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (30)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -21014,7 +21017,7 @@ GameObject:
   - component: {fileID: 1215050357}
   - component: {fileID: 1215050356}
   - component: {fileID: 1215050355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (23)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -21225,7 +21228,7 @@ GameObject:
   - component: {fileID: 1232445734}
   - component: {fileID: 1232445733}
   - component: {fileID: 1232445732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -21677,7 +21680,7 @@ GameObject:
   - component: {fileID: 1243879384}
   - component: {fileID: 1243879383}
   - component: {fileID: 1243879382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (48)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -21782,7 +21785,7 @@ GameObject:
   - component: {fileID: 1244164887}
   - component: {fileID: 1244164886}
   - component: {fileID: 1244164885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (41)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -21887,7 +21890,7 @@ GameObject:
   - component: {fileID: 1250262088}
   - component: {fileID: 1250262087}
   - component: {fileID: 1250262086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (21)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -22338,7 +22341,7 @@ GameObject:
   - component: {fileID: 1276662405}
   - component: {fileID: 1276662404}
   - component: {fileID: 1276662403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (18)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -24421,7 +24424,7 @@ GameObject:
   - component: {fileID: 1340583605}
   - component: {fileID: 1340583604}
   - component: {fileID: 1340583603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (60)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -24526,7 +24529,7 @@ GameObject:
   - component: {fileID: 1342766053}
   - component: {fileID: 1342766052}
   - component: {fileID: 1342766051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (46)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -25144,7 +25147,7 @@ GameObject:
   - component: {fileID: 1379211632}
   - component: {fileID: 1379211631}
   - component: {fileID: 1379211630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (39)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -25755,7 +25758,7 @@ GameObject:
   - component: {fileID: 1403350275}
   - component: {fileID: 1403350274}
   - component: {fileID: 1403350273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -25939,7 +25942,7 @@ GameObject:
   - component: {fileID: 1409603406}
   - component: {fileID: 1409603405}
   - component: {fileID: 1409603404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (50)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -26334,7 +26337,7 @@ GameObject:
   - component: {fileID: 1435815235}
   - component: {fileID: 1435815234}
   - component: {fileID: 1435815233}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (29)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -26533,7 +26536,7 @@ GameObject:
   - component: {fileID: 1443455852}
   - component: {fileID: 1443455851}
   - component: {fileID: 1443455850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (15)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -26638,7 +26641,7 @@ GameObject:
   - component: {fileID: 1447238890}
   - component: {fileID: 1447238889}
   - component: {fileID: 1447238888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (19)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -27413,7 +27416,7 @@ GameObject:
   - component: {fileID: 1489094898}
   - component: {fileID: 1489094897}
   - component: {fileID: 1489094896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (17)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -28029,7 +28032,7 @@ GameObject:
   - component: {fileID: 1534092152}
   - component: {fileID: 1534092151}
   - component: {fileID: 1534092150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -28134,7 +28137,7 @@ GameObject:
   - component: {fileID: 1535369720}
   - component: {fileID: 1535369719}
   - component: {fileID: 1535369718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (34)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -29355,7 +29358,7 @@ GameObject:
   - component: {fileID: 1613205170}
   - component: {fileID: 1613205169}
   - component: {fileID: 1613205168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (61)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -30574,7 +30577,7 @@ GameObject:
   - component: {fileID: 1684566953}
   - component: {fileID: 1684566952}
   - component: {fileID: 1684566951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (59)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -30909,7 +30912,7 @@ GameObject:
   - component: {fileID: 1696820163}
   - component: {fileID: 1696820162}
   - component: {fileID: 1696820161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (28)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -31119,6 +31122,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1712088388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712088383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ee5fef92cf46f4cb2c4dd3c433525f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arenaClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
 --- !u!1 &1716894398
 GameObject:
   m_ObjectHideFlags: 0
@@ -33743,7 +33759,7 @@ GameObject:
   - component: {fileID: 1804989246}
   - component: {fileID: 1804989245}
   - component: {fileID: 1804989244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (42)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -34275,7 +34291,7 @@ GameObject:
   - component: {fileID: 1843624403}
   - component: {fileID: 1843624402}
   - component: {fileID: 1843624401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (52)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -35786,7 +35802,7 @@ GameObject:
   - component: {fileID: 1915162607}
   - component: {fileID: 1915162606}
   - component: {fileID: 1915162605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (26)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -36008,7 +36024,7 @@ GameObject:
   - component: {fileID: 1922949173}
   - component: {fileID: 1922949172}
   - component: {fileID: 1922949171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (11)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -36435,7 +36451,7 @@ GameObject:
   - component: {fileID: 1953644703}
   - component: {fileID: 1953644702}
   - component: {fileID: 1953644701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -36540,7 +36556,7 @@ GameObject:
   - component: {fileID: 1959255282}
   - component: {fileID: 1959255281}
   - component: {fileID: 1959255280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (22)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -36645,7 +36661,7 @@ GameObject:
   - component: {fileID: 1959756820}
   - component: {fileID: 1959756819}
   - component: {fileID: 1959756818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (56)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -38342,7 +38358,7 @@ GameObject:
   - component: {fileID: 2018124256}
   - component: {fileID: 2018124255}
   - component: {fileID: 2018124254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (9)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -38558,7 +38574,7 @@ GameObject:
   - component: {fileID: 2028357223}
   - component: {fileID: 2028357222}
   - component: {fileID: 2028357221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (44)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -39414,7 +39430,7 @@ GameObject:
   - component: {fileID: 2075675749}
   - component: {fileID: 2075675748}
   - component: {fileID: 2075675747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (27)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -39708,7 +39724,7 @@ GameObject:
   - component: {fileID: 2084739621}
   - component: {fileID: 2084739620}
   - component: {fileID: 2084739619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (37)
   m_TagString: Arena
   m_Icon: {fileID: 0}
@@ -39813,7 +39829,7 @@ GameObject:
   - component: {fileID: 2094387371}
   - component: {fileID: 2094387370}
   - component: {fileID: 2094387369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (43)
   m_TagString: Arena
   m_Icon: {fileID: 0}

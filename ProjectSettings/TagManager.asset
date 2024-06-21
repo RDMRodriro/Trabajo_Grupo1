@@ -16,6 +16,7 @@ TagManager:
   - "Pu\xF1oPlayer"
   - AttackPlayer
   - Arena
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - UI
   - Player
   - Enemigo
-  - 
+  - Arena
   - 
   - 
   - 
