@@ -5,18 +5,13 @@ using UnityEngine;
 public class Eeventos_Animation : MonoBehaviour
 {
     public AudioSource audioSource;
-    public AudioClip Clip;
-
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public AudioClip clip;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("FOOD"))
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(clip);
         }
     }
 }
