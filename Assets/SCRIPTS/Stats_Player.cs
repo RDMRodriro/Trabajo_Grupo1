@@ -8,6 +8,10 @@ public class Stats_Player : MonoBehaviour
     public float vidaActual = 100;
     public float vidaMaxima = 100;
     public GameObject panel;
+
+    //del xavi
+    public GameObject Tpmuerte;
+
     void Start()
     {
         
@@ -70,4 +74,21 @@ public class Stats_Player : MonoBehaviour
         }
     }
 
+    //Xavier hizo codigo aqui uwu
+
+    public void ContinuarPartida()
+    {
+        vidaActual = 100;
+        panel.SetActive(false);
+        Time.timeScale = 1;
+        Tpmuerte.SetActive(false);
+    }
+
+    public void CuboGuardado()
+    {
+        if (vidaActual == 0)
+        {
+            Tpmuerte.SetActive(true);
+        }
+    }
 }

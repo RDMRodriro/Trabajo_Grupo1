@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/EscenaFinal.unity
     guid: 39f49b999a13b184a964ca761570b228
   - enabled: 0
-    path: Assets/LokiPelea.unity
+    path: Assets/Ciudad/Xavier/LokiPelea.unity
     guid: 5be4ae31bfe6b7f4cb6ce8602f1e99fa
   m_configObjects: {}
