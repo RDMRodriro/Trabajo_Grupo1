@@ -6,9 +6,22 @@ using UnityEngine.SceneManagement;
 public class Cambio_Escenas : MonoBehaviour
 {
     public GameObject PanelOptions;
+    public GameObject PausaMenu;
     public GameObject PanelAudio;
     public GameObject PanelGraficos;
 
+    public void MenuPausa()
+    {
+        PausaMenu.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
+
+    public void MenuPausaClose()
+    {
+        PausaMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
 
     public void Menuoptions()
     {
@@ -43,6 +56,7 @@ public class Cambio_Escenas : MonoBehaviour
     public void CargarEscena1()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,5 +65,12 @@ public class Cambio_Escenas : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+    }
+
+    public void Cerrar()
+    {
+        Debug.Log("Cerrando juego");
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
