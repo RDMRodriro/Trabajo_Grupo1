@@ -4,28 +4,11 @@ using UnityEngine;
 
 public class TpsPlayer : MonoBehaviour
 {
-    public Transform pointA;
-    public Transform pointB;
-    public Transform pointC;
-    public Transform pointD;
+    public Transform Target;
+    public GameObject ThePlayer;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            if (transform.position == pointA.position)
-            {
-                Teleport(other.transform, pointB.position);
-            }
-            else if (transform.position == pointC.position)
-            {
-                Teleport(other.transform, pointD.position);
-            }
-        }
-    }
-
-    private void Teleport(Transform player, Vector3 targetPosition)
-    {
-        player.position = targetPosition;
+        ThePlayer.transform.position = Target.transform.position;
     }
 }
