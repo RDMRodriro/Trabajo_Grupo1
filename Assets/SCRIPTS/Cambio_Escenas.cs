@@ -26,11 +26,13 @@ public class Cambio_Escenas : MonoBehaviour
     public void Menuoptions()
     {
         PanelOptions.SetActive(true);
+        PausaMenu.SetActive(false);
     }
 
     public void Menuoptionsclose()
     {
         PanelOptions.SetActive(false);
+        PausaMenu.SetActive(true);
     }
 
     public void MenuAudio()
@@ -57,6 +59,7 @@ public class Cambio_Escenas : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         Time.timeScale = 1f;
+        PausaMenu.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
