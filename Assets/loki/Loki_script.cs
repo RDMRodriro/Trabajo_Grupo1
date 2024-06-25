@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI; 
+using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Loki_script : MonoBehaviour
 {
@@ -18,12 +19,20 @@ public class Loki_script : MonoBehaviour
     public float tiempo;
     public float tiempoRestante;
 
-    public int vida;
+    //public int vida;
     public GameObject comida;
     public GameObject OdinDialogo;
     public GameObject Escuela;
     public GameObject EscuelaEnemigos;
+    public GameObject LokiVidaDestroy;
     // Start is called before the first frame update
+
+    public Image barradevida;
+    public float vidaActual = 200;
+    public float vidaMaxima = 200;
+    
+
+    
     void Start()
     {
         Agent = GetComponent<NavMeshAgent>();
@@ -33,6 +42,7 @@ public class Loki_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        barradevida.fillAmount = vidaActual / vidaMaxima;
         MovimientoNaveMesh();
         
     }
@@ -109,23 +119,26 @@ public class Loki_script : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            vida = vida - 20;
+            vidaActual = vidaActual - 20;
 
-            if (vida == 0)
+            if (vidaActual == 0)
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
                 OdinDialogo.SetActive(true);
                 EscuelaEnemigos.SetActive(true);
                 Escuela.SetActive(false);
+                Destroy(LokiVidaDestroy);
             }
+
+            
         }
 
         if (collision.transform.tag == "Almohada")
         {
-            vida = vida - 10;
+            vidaActual = vidaActual - 10;
 
-            if (vida == 0)
+            if (vidaActual == 0)
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
@@ -134,6 +147,14 @@ public class Loki_script : MonoBehaviour
                 Escuela.SetActive(false);
             }
         }
+
+        
+
+        //barrita de vida
+     
     }
 
+  
+
+    
 }

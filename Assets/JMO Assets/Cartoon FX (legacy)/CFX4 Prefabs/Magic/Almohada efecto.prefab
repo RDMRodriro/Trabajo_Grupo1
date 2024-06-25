@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 198927480420149238}
   - component: {fileID: 199136700032306822}
   m_Layer: 0
-  m_Name: CFX4 Magic Hit
+  m_Name: Almohada efecto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
