@@ -2160,6 +2160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixerMusica: {fileID: 0}
   audioMixerEffects: {fileID: 0}
+  toggle: {fileID: 1657539368}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,10 +3637,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867976164}
         m_TargetAssemblyTypeName: Menu_Options_Settings, Assembly-CSharp
         m_MethodName: SetFullScreen
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
