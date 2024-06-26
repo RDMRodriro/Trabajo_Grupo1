@@ -74,6 +74,6 @@ public class Cambio_Escenas : MonoBehaviour
     {
         Debug.Log("Cerrando juego");
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }
