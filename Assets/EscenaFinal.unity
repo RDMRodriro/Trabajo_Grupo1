@@ -28177,6 +28177,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1962344140}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   ExitTrigger:
     m_PersistentCalls:
       m_Calls: []
@@ -38238,15 +38250,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13637878
+      value: 0.13637877
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000018858224
+      value: 0.0000018906388
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402447312035, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000025961177
+      value: -0.00000026027482
       objectReference: {fileID: 0}
     - target: {fileID: 1037564402524870980, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_FollowOffset.y
@@ -38386,11 +38398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1037564403214639438, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000018993518
+      value: 0.0000018640794
       objectReference: {fileID: 0}
     - target: {fileID: 1037564403214639438, guid: 33df24329503a8e479256cf4e37580a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000019147673
+      value: -0.00000018792085
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54719,7 +54731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1962344141
 RectTransform:
   m_ObjectHideFlags: 0
