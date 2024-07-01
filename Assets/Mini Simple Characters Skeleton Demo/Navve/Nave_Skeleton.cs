@@ -90,7 +90,7 @@ public class Nave_Skeleton : MonoBehaviour
         }
         if(collision.transform.tag == "Almohada")
         {
-            vida = vida - 2;
+            vida = vida - 4;
             if (vida <= 0)
             {
                 EsqueletosContador.PuntosEsq += 1;
