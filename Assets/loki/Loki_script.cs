@@ -30,9 +30,14 @@ public class Loki_script : MonoBehaviour
     public Image barradevida;
     public float vidaActual = 200;
     public float vidaMaxima = 200;
-    
 
-    
+    //Xavier
+
+    public GameObject Cubo;
+    public GameObject CuboTrigger;
+
+
+
     void Start()
     {
         Agent = GetComponent<NavMeshAgent>();
@@ -121,7 +126,7 @@ public class Loki_script : MonoBehaviour
         {
             vidaActual = vidaActual - 20;
 
-            if (vidaActual == 0)
+            if (vidaActual <= 0)
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
@@ -130,15 +135,18 @@ public class Loki_script : MonoBehaviour
                 Escuela.SetActive(false);
                 Destroy(LokiVidaDestroy);
             }
-
-            
+            if (vidaActual <= 0)
+            {
+                Cubo.SetActive(false);
+                CuboTrigger.SetActive(true);
+            }
         }
 
         if (collision.transform.tag == "Almohada")
         {
             vidaActual = vidaActual - 10;
 
-            if (vidaActual == 0)
+            if (vidaActual <= 0)
             {
                 Destroy(gameObject);
                 comida.SetActive(true);
@@ -148,13 +156,6 @@ public class Loki_script : MonoBehaviour
             }
         }
 
-        
-
-        //barrita de vida
-     
     }
 
-  
-
-    
 }
