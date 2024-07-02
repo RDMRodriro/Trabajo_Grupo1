@@ -81,7 +81,7 @@ public class Nave_Skeleton : MonoBehaviour
     {
         if(collision.transform.tag == "AttackPlayer")
         {
-            vida = vida - 20;
+            vida = vida - 5;
             if (vida <= 0)
             {
                 GetComponent<EsqueletosContador>().ActualizarScore();
@@ -90,7 +90,7 @@ public class Nave_Skeleton : MonoBehaviour
         }
         if(collision.transform.tag == "Almohada")
         {
-            vida = vida - 10;
+            vida = vida - 5;
             if (vida <= 0)
             {
                 GetComponent<EsqueletosContador>().ActualizarScore();

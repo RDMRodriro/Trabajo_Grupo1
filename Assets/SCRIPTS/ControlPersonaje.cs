@@ -55,11 +55,11 @@ public class ControlPersonaje : MonoBehaviour
             animator.SetBool("IsWalking", false);
         }
 
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, distanciaAtaque, enemigoLayer);
+        /*Collider[] hitColliders = Physics.OverlapSphere(transform.position, distanciaAtaque, enemigoLayer);
         if (hitColliders.Length > 0)
         {
             animator.SetTrigger("Attack");
-        }
+        }*/
     }
 
 
