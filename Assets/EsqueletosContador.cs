@@ -4,25 +4,37 @@ using UnityEngine;
 
 public class EsqueletosContador : MonoBehaviour
 {
-    public static EsqueletosContador instance;
-    public static int PuntosEsq = 0;
-    public BoxCollider PuertaEntrada;
+    public static int score = 0;
+    
+    public GameObject Cubo;
+    public GameObject CuboTrigger;
 
     void Start()
     {
-        PuertaEntrada = GetComponent<BoxCollider>();
+       
     }
 
     void Update()
     {
-        
+        if (score >= 25)
+        {
+            Cubo.SetActive(false);
+            CuboTrigger.SetActive(true);
+        }
+
+        EnemyFast();
     }
 
-    public void Contador()
+    public void ActualizarScore()
     {
-        if (PuntosEsq == 30) 
+        score++;
+    }
+
+    public void EnemyFast()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
         {
-            PuertaEntrada.isTrigger = true;
+            score = 24;
         }
     }
 }

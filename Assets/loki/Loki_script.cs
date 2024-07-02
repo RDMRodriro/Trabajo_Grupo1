@@ -34,7 +34,9 @@ public class Loki_script : MonoBehaviour
     //Xavier
 
     public GameObject Cubo;
+    public GameObject CuboE;
     public GameObject CuboTrigger;
+    public GameObject CuboTriggerE;
 
 
 
@@ -138,7 +140,9 @@ public class Loki_script : MonoBehaviour
             if (vidaActual <= 0)
             {
                 Cubo.SetActive(false);
+                CuboE.SetActive(true);
                 CuboTrigger.SetActive(true);
+                Destroy(CuboTriggerE);
             }
         }
 

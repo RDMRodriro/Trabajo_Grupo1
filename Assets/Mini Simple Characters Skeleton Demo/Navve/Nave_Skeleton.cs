@@ -81,19 +81,19 @@ public class Nave_Skeleton : MonoBehaviour
     {
         if(collision.transform.tag == "AttackPlayer")
         {
-            vida = vida - 8;
+            vida = vida - 20;
             if (vida <= 0)
             {
-                EsqueletosContador.PuntosEsq += 1;
+                GetComponent<EsqueletosContador>().ActualizarScore();
                 Destroy(gameObject);
             }
         }
         if(collision.transform.tag == "Almohada")
         {
-            vida = vida - 4;
+            vida = vida - 10;
             if (vida <= 0)
             {
-                EsqueletosContador.PuntosEsq += 1;
+                GetComponent<EsqueletosContador>().ActualizarScore();
                 Destroy(gameObject);
             }
         }

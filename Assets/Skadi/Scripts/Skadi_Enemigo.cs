@@ -17,6 +17,7 @@ public class Skadi_Enemigo : MonoBehaviour
     public float tiempoRestante;
 
     public int vida;
+    public GameObject Puerta;
 
 
     void Start()
@@ -92,8 +93,9 @@ public class Skadi_Enemigo : MonoBehaviour
         {
             vida = vida - 20;
 
-            if (vida == 0)
+            if (vida <= 0)
             {
+                Puerta.SetActive(false);
                 Destroy(gameObject);
             }
         }
@@ -102,8 +104,9 @@ public class Skadi_Enemigo : MonoBehaviour
         {
             vida = vida - 10;
 
-            if (vida == 0)
+            if (vida <= 0)
             {
+                Puerta.SetActive(false);
                 Destroy(gameObject);
             }
         }

@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 2652142019128544354}
   - component: {fileID: 7720584574235973701}
   - component: {fileID: 8502440204468255052}
+  - component: {fileID: 4459114555567573433}
   m_Layer: 0
   m_Name: EnemigoEsqueleto
   m_TagString: Untagged
@@ -292,6 +293,20 @@ MonoBehaviour:
   DistanceShoot: 8.26
   PointerEspada: {fileID: 4447782675665294676}
   vida: 40
+--- !u!114 &4459114555567573433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023674764766377932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece58362f4249f74a8774fa57677a170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cubo: {fileID: 0}
+  CuboTrigger: {fileID: 0}
 --- !u!1 &8186448252936174806
 GameObject:
   m_ObjectHideFlags: 0
